@@ -1,3 +1,28 @@
 body {
   margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 25%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #e7decd;
+  color: #1a1423;
+  a:link { 
+    color: #1a1423
+  }
+  a:visited {
+    color: #090446;
+  }
+  a:hover {
+    color: #8661c1;
+  }
+}
+
+.avatar {
+  width: 175px;
 }
