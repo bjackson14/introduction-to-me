@@ -12,3 +12,10 @@ function addGuest(points) {
   guestScore += points;
   guestScoreEl.textContent = guestScore;
 }
+
+function newGame() {
+  homeScore = 0;
+  guestScore = 0;
+  homeScoreEl.textContent = homeScore;
+  guestScoreEl.textContent = guestScore;
+}
