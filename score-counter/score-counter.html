@@ -2,7 +2,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="score-counter.css" />
-        <script src="index.js"></script>
     </head>
     <body>
         <div class="container">
@@ -10,20 +9,21 @@
                 <h3 class="title">HOME</h3>
                 <p id="home-score" class="score">0</p>
                 <div class="score-buttons">
-                  <button id="home-1" class="add-btn">+1</button>
-                  <button id="home-2" class="add-btn">+2</button>
-                  <button id="home-3" class="add-btn">+3</button>
+                  <button id="home-1" class="add-btn" onclick="addHome(1)">+1</button>
+                  <button id="home-2" class="add-btn" onclick="addHome(2)">+2</button>
+                  <button id="home-3" class="add-btn" onclick="addHome(3)">+3</button>
                 </div>
             </div>
             <div>
                 <h3 class="title">GUEST</h3>
                 <p id="guest-score" class="score">0</p>
                 <div class="score-buttons">
-                  <button id="home-1" class="add-btn">+1</button>
-                  <button id="home-2" class="add-btn">+2</button>
-                  <button id="home-3" class="add-btn">+3</button>
+                  <button id="guest-1" class="add-btn" onclick="addGuest(1)">+1</button>
+                  <button id="guest-2" class="add-btn" onclick="addGuest(2)">+2</button>
+                  <button id="guest-3" class="add-btn" onclick="addGuest(3)">+3</button>
                 </div>
             </div>
         </div>
     </body>
+    <script src="score-counter.js"></script>
 </html>
