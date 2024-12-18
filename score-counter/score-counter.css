@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Cursed Timer;
+  src: url(../assets/CursedTimer.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #20244c;
+  width: 50%;
+  margin: auto;
+  padding: 30px 50px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.title {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;font-size: 40px;
+  margin: 0 0 10px 0;
+}
+
+.score {
+  color: #fc4c6c;
+  background: #000000;
+  font-family: Cursed Timer;
+  font-size: 72px;
+  margin: 0 0 20px 0;
+  padding: 20px 0 10px 0;
+  border-radius: 5px;
+}
+
+button {
+  background: #20244c;
+  color: #9cacdc;
+  border: 2px solid #9cacdc;
+  border-radius: 5px;
+  height: 45px;
+}
+
+.add-btn {
+  width: 45px;
+  font-family: Cursed Timer;
+  font-size: 18px;
+}
+
+#new-game {
+  width: 33%;
+  margin: auto;
+}
