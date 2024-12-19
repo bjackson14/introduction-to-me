@@ -6,7 +6,7 @@ body {
 
 #header {
   height: 343px;
-  background-image: url("../assets/atlanta.jpg");
+  background-image: url("../assets/imgs/atlanta.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
