@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Inter;
+  src: url('../assets/fonts/Inter.ttf');
+}
+
+body {
+  margin: 0;
+  background: #1f2937;
+  text-align: center;
+  font-family: Inter;
+}
+
+#header-container {
+  width: 100%;
+  height: 260px;
+  background: #6943ff;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+#header {
+  width: 450px;
+  margin: 0 auto 30px;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+#conversion-input {
+  display: block;
+  width: 120px;
+  height: 85px;
+  margin: 0 auto 30px;
+  font-weight: 800;
+  font-size: 58px;
+  color: #ffffff;
+  text-align: center;
+  background: #6943ff;
+  border: none;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  background-clip: text; /* Needed for auto-complete */
+  -webkit-text-fill-color: #ffffff; /* Needed for auto-complete */
+  caret-color: #ffffff; /* Needed for auto-complete */
+}
+
+#conversion-input:focus {
+  outline: none;
+}
+
+#convert-btn {
+  width: 120px;
+  height: 45px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3d3d3d;
+  padding: 10px ;
+}
+
+.conversion-container {
+  width: 500px;
+  height: 110px;
+  margin: 0 auto 25px;
+  background: #273549;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.unit-type{
+  margin: 25px 0 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ccc1ff;
+}
+
+.unit-data {
+  font-size: 14px;
+  color: #ffffff;
+}
