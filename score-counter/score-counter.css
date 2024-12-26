@@ -8,26 +8,33 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #20244c;
   width: 50%;
   margin: auto;
   padding: 30px 50px;
 }
 
+#score-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .score-container {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  padding-left: 0;
   padding-bottom: 30px;
+  margin: 0;
+  list-style-type: none;
 }
 
 .title {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;font-size: 40px;
+  font-weight: 700;
+  font-size: 2.5rem;
   margin: 0 0 10px 0;
 }
 
@@ -35,7 +42,7 @@ body {
   color: #fc4c6c;
   background: #000000;
   font-family: Cursed Timer;
-  font-size: 72px;
+  font-size: 4.5rem;
   margin: 0 0 20px 0;
   padding: 20px 0 10px 0;
   border-radius: 5px;
@@ -43,8 +50,8 @@ body {
 
 button {
   background: #20244c;
-  color: #9cacdc;
-  border: 2px solid #9cacdc;
+  color: #a4b3df;
+  border: 2px solid #a4b3df;
   border-radius: 5px;
   height: 45px;
 }
@@ -52,7 +59,7 @@ button {
 .add-btn {
   width: 45px;
   font-family: Cursed Timer;
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 #new-game {
