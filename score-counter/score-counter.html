@@ -4,29 +4,31 @@
     <link rel="stylesheet" href="score-counter.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="score-container">
-        <div>
-          <h3 class="title">HOME</h3>
-          <p id="home-score" class="score">0</p>
-          <div class="score-buttons">
-            <button id="home-1" class="add-btn" onclick="addHome(1)">+1</button>
-            <button id="home-2" class="add-btn" onclick="addHome(2)">+2</button>
-            <button id="home-3" class="add-btn" onclick="addHome(3)">+3</button>
-          </div>
-        </div>
-        <div>
-          <h3 class="title">GUEST</h3>
-          <p id="guest-score" class="score">0</p>
-          <div class="score-buttons">
-            <button id="guest-1" class="add-btn" onclick="addGuest(1)">+1</button>
-            <button id="guest-2" class="add-btn" onclick="addGuest(2)">+2</button>
-            <button id="guest-3" class="add-btn" onclick="addGuest(3)">+3</button>
-          </div>
-        </div>
-      </div>
-      <button id="new-game" onclick="newGame()">New Game</button>
-    </div>
+    <main class="container">
+      <section id="score-section">
+        <ul class="score-container">
+          <li>
+            <p class="title">HOME</p>
+            <p id="home-score" class="score">0</p>
+            <div class="score-buttons">
+              <button id="home-1" class="add-btn" onclick="addHome(1)">+1</button>
+              <button id="home-2" class="add-btn" onclick="addHome(2)">+2</button>
+              <button id="home-3" class="add-btn" onclick="addHome(3)">+3</button>
+            </div>
+          </li>
+          <li>
+            <p class="title">GUEST</p>
+            <p id="guest-score" class="score">0</p>
+            <div class="score-buttons">
+              <button id="guest-1" class="add-btn" onclick="addGuest(1)">+1</button>
+              <button id="guest-2" class="add-btn" onclick="addGuest(2)">+2</button>
+              <button id="guest-3" class="add-btn" onclick="addGuest(3)">+3</button>
+            </div>
+          </li>
+        </ul>
+        <button id="new-game" onclick="newGame()">New Game</button>
+      </section>
+    </main>
   </body>
   <script src="score-counter.js"></script>
 </html>

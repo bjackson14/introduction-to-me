@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-  height: 343px;
+  height: 350px;
   background-image: url("../assets/imgs/atlanta.jpg");
   background-size: cover;
   display: flex;
@@ -43,11 +43,17 @@ body {
   padding: 20px 0
 }
 
-#activity-containter {
+#activity-section {
+  width: 100%;
+}
+
+#activity-list {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .activity-img {
@@ -88,7 +94,7 @@ body {
 }
 
 #guide-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 

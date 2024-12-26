@@ -4,11 +4,14 @@
     <link rel="stylesheet" href="unit-converter.css">
   </head>
   <body>
-    <div id="header-container">
+    <header id="header-container">
       <p id="header">Metric/Imperial Unit Conversion</p>
-      <input type="text" id="conversion-input"/>
+      <label for="conversion-input">Measurement</label>
+      <input type="text" id="conversion-input" placeholder="20"/>
       <button id="convert-btn">Convert</button>
-    </div>
-    <div id="conversion-container"></div>
+    </header>
+    <main id="conversion-container">
+      <section id="length-section"></section>
+    </main>
   <script src="unit-converter.js"></script>
 </html>
