@@ -3,6 +3,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a {
+  font-weight: 600;
+}
+
 .container {
   width: 25%;
   padding: 20px;
@@ -12,17 +16,24 @@ body {
   text-align: center;
   background: #e7decd;
   color: #1a1423;
-  a:link { 
-    color: #1a1423
-  }
-  a:visited {
-    color: #090446;
-  }
-  a:hover {
-    color: #8661c1;
-  }
+}
+
+.container a:link { 
+  color: #1a1423
+}
+
+.container a:visited {
+  color: #090446;
+}
+
+.container a:hover {
+  color: #523384;
 }
 
 .avatar {
-  width: 175px;
+  width: 200px;
+}
+
+#name {
+  font-size: 1.25rem;
 }
