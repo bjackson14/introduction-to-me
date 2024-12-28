@@ -65,6 +65,11 @@ header {
   margin: 10px 6px 4px 0;
 }
 
+.icon:hover,
+.icon:focus {
+  opacity: .5;
+}
+
 .likes {
   font-weight: 700;
   margin-top: 0;

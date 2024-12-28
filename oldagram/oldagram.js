@@ -27,26 +27,37 @@ const posts = [
       likes: 152
   }
 ]
-
 const main = document.getElementById('main');
-for (let i = 0; i < posts.length; i++) {
-  main.innerHTML += `
-    <section>
-      <div class="user-info">
-        <img class="user" src="${posts[i].avatar}" alt="Avatar of ${posts[i].name}" />
-        <div>
-          <p class="name">${posts[i].name}</p>
-          <p class="location">${posts[i].location}</p>
+
+render();
+
+function render() {
+  main.innerHTML = '';
+  for (let i = 0; i < posts.length; i++) {
+    main.innerHTML += `
+      <section>
+        <div class="user-info">
+          <img class="user" src="${posts[i].avatar}" alt="Avatar of ${posts[i].name}" />
+          <div>
+            <p class="name">${posts[i].name}</p>
+            <p class="location">${posts[i].location}</p>
+          </div>
         </div>
-      </div>
-      <img class="post" src="${posts[i].post}" alt="Post by ${posts[i].name}" />
-      <div class="footer">
-        <img class="icon" src="/assets/imgs/icon-heart.png" alt="Heart icon" />
-        <img class="icon" src="/assets/imgs/icon-comment.png" alt="Comment icon" />
-        <img class="icon" src="/assets/imgs/icon-dm.png" alt="Direct Message icon" />
-        <p class="likes">${posts[i].likes} likes</p>
-        <p class="comment-name">${posts[i].username} <span class="comment">${posts[i].comment}</span></p>
-      </div>
-    </section>
-  `
+        <img class="post" src="${posts[i].post}" alt="Post by ${posts[i].name}" />
+        <div class="footer">
+          <img class="icon" onclick="incrementLike(${i})" src="/assets/imgs/icon-heart.png" alt="Like icon" />
+          <img class="icon" src="/assets/imgs/icon-comment.png" alt="Comment icon" />
+          <img class="icon" src="/assets/imgs/icon-dm.png" alt="Direct Message icon" />
+          <p id="likes-${i}" class="likes">${posts[i].likes} likes</p>
+          <p class="comment-name">${posts[i].username} <span class="comment">${posts[i].comment}</span></p>
+        </div>
+      </section>
+    `
+  }
+}
+
+function incrementLike(post) {
+  let likes = document.getElementById(`likes-${post}`);
+  posts[post].likes++;
+  likes.innerHTML = `${posts[post].likes} likes`;
 }
