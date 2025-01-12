@@ -165,8 +165,9 @@ footer {
 }
 
 .payment-popup {
+  display: none;
   position: absolute;
-  left: -1000px;
+  left: 38px;
   top: 292px;
   width: 524px;
   height: 542px;
@@ -222,4 +223,13 @@ input:-webkit-autofill {
   background-color: #16db99;
   color: #ffffff;
   border: none;
+}
+
+.message {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-radius: 3px;
+  font-size: 28px;
+  line-height: 30px;
+  padding: 60px;
 }

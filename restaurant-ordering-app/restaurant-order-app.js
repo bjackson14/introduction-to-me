@@ -55,13 +55,18 @@ document.addEventListener('click', event => {
         button.disabled = true;
       }
     }
-    document.getElementById('payment-popup').style.left = "38px"
+    document.getElementById('payment-popup').style.display = "block"
   }
-  // Handle 'pay' event click listener. Hides payment popup and replaces order with message
+  // Handle 'pay' button click event. Hides payment popup and replaces order with message
   else if (event.target.id === 'pay') {
-    event.preventDefault();
     const name = document.getElementById('form-name').value;
-    console.log(name)
+    const creditCard = document.getElementById('form-card-name').value;
+    const cvv = document.getElementById('form-cvv').value;
+    if (name && creditCard && cvv) {
+      event.preventDefault();
+      document.getElementById('payment-popup').style.display = "none"
+      document.getElementById('footer').innerHTML = `<p class="message">Thanks, ${name}! Your order is on its way</p>`;
+    }
   }
 });
 
