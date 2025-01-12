@@ -18,7 +18,7 @@ const menu = menuArray.map(item => {
   `
 }).join('');
 
-document.getElementById('menu').innerHTML = menu;
+document.getElementById('menu').innerHTML += menu;
 
 // Event listener to listen to click events on entire document
 document.addEventListener('click', event => {
@@ -46,6 +46,22 @@ document.addEventListener('click', event => {
       order = order.filter(item => item.id != currentOrder.id)
     }
     renderOrderTotalFooter();
+  }
+  // Handles the "complete" button click event. Disables the "add" buttons and displays the payment popup.
+  else if(event.target.id === 'complete') {
+    const buttons = document.getElementsByTagName('button')
+    for (let button of buttons) {
+      if (button.id !== 'pay') {
+        button.disabled = true;
+      }
+    }
+    document.getElementById('payment-popup').style.left = "38px"
+  }
+  // Handle 'pay' event click listener. Hides payment popup and replaces order with message
+  else if (event.target.id === 'pay') {
+    event.preventDefault();
+    const name = document.getElementById('form-name').value;
+    console.log(name)
   }
 });
 
@@ -81,7 +97,7 @@ function renderOrderTotalFooter() {
           <h4 class="total-label">Total Price</h3>
           <p class="total-price" id="total-price">$${total}</p>
         </div>
-        <button class="complete-btn" id="complete-btn">Complete order</button>
+        <button class="complete-btn" id="complete">Complete order</button>
     `;
   }
 }
