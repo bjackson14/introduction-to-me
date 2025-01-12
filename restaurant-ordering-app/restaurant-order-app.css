@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'Smythe';
+  src: url('../assets/fonts/Smythe.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Smythe';
+  width: 600px;
+  color: #000000;
+}
+
+header {
+  margin-bottom: 50px;
+  height: 175px;
+  background-image: url('../assets/imgs/burger-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+}
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.header-title,
+.header-descritpion,
+main,
+footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0;
+}
+
+.header-title{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  line-height: 24px;
+}
+.header-descritpion {
+  font-size: 1.5rem;
+}
+
+.menu-item {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: solid 1px #d2d2d2;
+}
+
+.item-icon {
+  margin: 0;
+  font-size: 6rem;
+  line-height: 100px;
+}
+
+.item-info {
+  width: 66%;
+}
+
+.item-title {
+  white-space: nowrap;
+}
+
+.item-title,
+.footer-header,
+.total-label {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 20px;
+}
+
+.item-description {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #8b8b8b;
+}
+
+.item-price,
+.total-price {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border: solid 1.5px #dedede;
+  border-radius: 50%;
+  font-family: 'Inter';
+  font-weight: 200;
+  font-size: 2rem;
+  color: #3c3c3c;
+}
+
+.footer-header {
+  margin: 40px;
+}
+
+.footer-item-container {
+  margin-bottom: 10px;
+}
+
+.footer-item-container,
+.footer-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-separator {
+  border-bottom: solid 2px #393333;
+ margin: 20px 0;
+}
+
+.footer-total {
+  margin-bottom: 50px;
+}
+
+.remove-btn {
+  border: none;
+  background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.75rem;
+  color: #bbbbbb;
+  line-height: 24px;
+}
+
+.complete-btn {
+  width: 100%;
+  height: 60px;
+  background-color: #16db99;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.payment-popup {
+  display: none;
+  position: absolute;
+  left: 38px;
+  top: 292px;
+  width: 524px;
+  height: 542px;
+  text-align: center;
+  border: solid 1px #757575;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 255px #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.payment-popup-header {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 31px;
+  margin: 40px 0 60px 0;
+}
+
+.payment-popup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-popup input,
+.payment-popup button {
+  height: 71px;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  line-height: 31px;
+}
+
+.payment-popup input {
+  width: 475px;
+  color: #757575;
+  margin-bottom: 20px;
+  border: solid 1px #757575;
+  padding-left: 20px;
+}
+
+input:-webkit-autofill {
+  border: 1px solid #757575;
+  -webkit-text-fill-color: #757575;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+.payment-popup button {
+  width: 488px;
+  margin-top: 20px;
+  box-sizing: content-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  background-color: #16db99;
+  color: #ffffff;
+  border: none;
+}
+
+.message {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-radius: 3px;
+  font-size: 28px;
+  line-height: 30px;
+  padding: 60px;
+}

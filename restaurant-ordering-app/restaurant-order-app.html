@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="restaurant-order-app.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Jimmy's Diner</h1>
+      <h2 class="header-descritpion">The best burgers and pizzas is town.</h2>
+    </header>
+
+    <main id="menu">
+      <section class="payment-popup" id="payment-popup">
+        <h3 class="payment-popup-header">Enter card details</h3>
+        <form>
+          <input type="text" id="form-name" name="name" placeholder="Enter your name" pattern="^[A-Za-z]+ [A-Za-z]+$" required />
+          <input type="text" id="form-card-name" name="card-number" placeholder="Enter card number" pattern="^\d{10,16}$" required />
+          <input type="text" id="form-cvv" name="cvv" placeholder="Enter CVV" pattern="^\d{3,4}$" required />
+          <button type="submit" id="pay">Pay</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+  <script src="restaurant-order-app.js" type="module"></script>
+</html>
