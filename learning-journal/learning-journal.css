@@ -17,6 +17,7 @@
 
 body {
   margin: 0;
+  font-family: 'Source Sans Pro';
 }
 
 /* header */
@@ -58,16 +59,11 @@ header ul {
 }
 
 header a {
-  font-family: 'Source Sans Pro';
   font-weight: 600;
   font-size: 0.75rem;
   color: #090909;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-main {
-  font-family: 'Source Sans Pro';
 }
 
 /* main content */
@@ -132,6 +128,31 @@ button {
   text-decoration: underline;
   border: none;
   background-color: inherit;
+}
+
+/* footer */
+footer {
+  padding: 3em 0;
+  background-color: #202020;
+  text-align: center;
+}
+
+footer h1,
+footer h2 {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+footer h1 {
+  margin-bottom: 0.25em;
+  line-height: 1.1;
+  color: #ececec;
+}
+
+footer h2 {
+  font-weight: 400;
+  line-height: 1.25;
+  color: #d7d7d7;
 }
 
 /* utility */
