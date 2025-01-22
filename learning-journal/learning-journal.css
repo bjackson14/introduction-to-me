@@ -174,6 +174,7 @@ footer {
   padding: 3em 0;
   background-color: #202020;
   text-align: center;
+  box-shadow: 0 50vh 0 50vh #202020;
 }
 
 footer h1,
@@ -204,6 +205,19 @@ footer h2 {
   .icon {
     height: 6vh;
   }
+
+  .primary-article {
+    background-position: 0% 75%;
+  }
+
+  .primary-article h1,
+  .primary-article p {
+    width: 50%;
+  }
+
+  .article-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 768px) {
@@ -214,16 +228,48 @@ footer h2 {
   header h1 {
     font-size: 1.25rem;
   }
+
+  .primary-article {
+    padding-top: 10em;
+  }
+
+  .article img {
+    height: 15vh;
+  }
 }
 
 @media (min-width: 1024px) {
   .icon {
     height: 3.5vh;
   }
+
+  .article img {
+    height: 20vh;
+  }
+
+  .primary-article {
+    background-position: 0% 80%;
+  }
+
+  .primary-article h1,
+  .primary-article p {
+    width: 40%;
+  }
 }
 
 @media (min-width: 1280px) {
   .icon {
     height: 3vh;
+  }
+
+  .primary-article {
+    height: 33vh;
+    background-position: 0% 80%;
+  }
+
+  @media (min-width: 1367px) {
+    .primary-article {
+      padding-top: 22vh;
+    }
   }
 }
