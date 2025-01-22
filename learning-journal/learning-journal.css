@@ -20,6 +20,10 @@ body {
   font-family: 'Source Sans Pro';
 }
 
+a {
+  text-decoration: none;
+}
+
 /* header */
 header,
 .header-title,
@@ -65,7 +69,6 @@ header a {
   font-size: 0.75rem;
   color: #090909;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 /* main content */
@@ -84,7 +87,8 @@ time {
   text-transform: uppercase;
 }
 
-.primary-article h1 {
+.primary-article h1,
+.blog-post h1 {
   font-size: 2rem;
   line-height: 1.15;
   margin: 0.25em 0;
@@ -92,7 +96,19 @@ time {
 
 .primary-article p {
   margin: 0;
+}
+
+.primary-article p,
+.blog-post p {
   line-height: 1.25;
+}
+
+.blog-post p {
+  margin-bottom: 1.5em;
+}
+
+.blog-post h2 {
+  font-size: 1rem;
 }
 
 .article-container {
@@ -101,7 +117,7 @@ time {
 }
 
 article {
-  margin: 2em 1em
+  margin: 1em 1em
 }
 
 img {
@@ -135,6 +151,12 @@ button {
   text-decoration: underline;
   border: none;
   background-color: inherit;
+}
+
+.recent {
+  margin-top: 2.5em;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* footer */
