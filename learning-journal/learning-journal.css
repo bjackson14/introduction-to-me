@@ -45,8 +45,7 @@ header {
 
 .icon {
   margin: 0;
-  width: 23px;
-  height: 23px;
+  height: 3.5vh;
 }
 
 header h1 {
@@ -198,4 +197,33 @@ footer h2 {
 /* utility */
 .hidden {
   display: none;
+}
+
+/* media queries */
+@media (min-width: 667px) {
+  .icon {
+    height: 6vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon {
+    height: 2.5vh;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon {
+    height: 3.5vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .icon {
+    height: 3vh;
+  }
 }
