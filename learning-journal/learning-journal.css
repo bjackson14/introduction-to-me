@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/SourceSansPro.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+/* general page style */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  font-family: 'Source Sans Pro';
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header,
+.header-title,
+nav ul,
+footer {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25em 1em;
+  line-height: 1.25;
+}
+
+.header-title {
+  align-items: center;
+  gap: 0.25em;
+}
+
+.icon {
+  margin: 0;
+  height: 3.5vh;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: #0e0e0e;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 1em;
+  list-style: none;
+}
+
+header a {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #090909;
+  text-transform: uppercase;
+}
+
+/* main content */
+.primary-article {
+  margin: 0;
+  padding: 7em 1em 1em 1em;
+  background-image: url('../assets/imgs/primary-article.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
+}
+
+time {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.primary-article h1,
+.blog-post h1,
+.info h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 0.25em 0;
+}
+
+.primary-article p {
+  margin: 0;
+}
+
+.primary-article p,
+.blog-post p {
+  line-height: 1.25;
+}
+
+.blog-post img {
+  width: 100%;
+  height: 33vh;
+  object-fit: cover;
+  object-position: 0% 70%;
+}
+
+.blog-post p {
+  margin-bottom: 1.5em;
+}
+
+.blog-post h2,
+.info h2 {
+  font-size: 1rem;
+}
+
+.article-container {
+  display: grid;
+}
+
+article {
+  margin: 1em 1em
+}
+
+.article img {
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: 33vh;
+  object-fit: cover;
+}
+
+.article h1 {
+  margin: 0.25em 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: #141414;
+}
+
+.article p {
+  margin: 0;
+  line-height: 1.25;
+  color: #505050;
+}
+
+button {
+  display: block;
+  margin: 0 auto 3em;
+  width: 50%;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  line-height: 1.25;
+  color: #000000;
+  text-decoration: underline;
+  border: none;
+  background-color: inherit;
+}
+
+.recent {
+  margin-top: 2.5em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.info img {
+  height: 25vh;
+  border-radius: 50%;
+}
+
+.info h1 ,
+.info p{
+  color: #151515;
+}
+
+/* footer */
+footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  background-color: #202020;
+}
+
+footer h1,
+footer h2 {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+footer h1 {
+  margin-bottom: 0.25em;
+  line-height: 1.1;
+  color: #ececec;
+}
+
+footer h2 {
+  font-weight: 400;
+  line-height: 1.25;
+  color: #d7d7d7;
+}
+
+/* utility */
+.hidden {
+  display: none;
+}
+
+/* media queries */
+@media (min-width: 667px) {
+  .icon {
+    height: 6vh;
+  }
+
+  .primary-article {
+    background-position: 0% 75%;
+  }
+
+  .primary-article h1,
+  .primary-article p {
+    width: 50%;
+  }
+
+  .article-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-post img {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon {
+    height: 2.5vh;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  .primary-article {
+    padding-top: 10em;
+  }
+
+  .article img {
+    height: 15vh;
+  }
+
+  .blog-post img {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon {
+    height: 2.5vh;
+  }
+
+  .article img {
+    height: 20vh;
+  }
+
+  .primary-article {
+    background-position: 0% 80%;
+  }
+
+  .primary-article h1,
+  .primary-article p {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .icon {
+    height: 3vh;
+  }
+
+  .primary-article {
+    height: 33vh;
+    background-position: 0% 80%;
+  }
+
+  @media (min-width: 1367px) {
+    .primary-article {
+      padding-top: 22vh;
+    }
+
+    .article img {
+      height: 30vh;
+    }
+
+    .blog-post img {
+      object-position: 0% 80%;
+    }
+  }
+}
