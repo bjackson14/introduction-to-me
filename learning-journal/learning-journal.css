@@ -173,8 +173,9 @@ button {
   border-radius: 50%;
 }
 
-.info h1 {
-  color: #141414;
+.info h1 ,
+.info p{
+  color: #151515;
 }
 
 /* footer */
