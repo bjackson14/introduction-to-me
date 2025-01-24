@@ -1,5 +1,5 @@
 body {
-  margin: 20px;
+  margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -8,9 +8,13 @@ a {
 }
 
 .container {
-  width: 25%;
-  padding: 20px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 80%;
+  padding: 1.25em;
+  margin: 1.25em auto;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -31,9 +35,53 @@ a {
 }
 
 .avatar {
-  width: 200px;
+  width: 100%;
 }
 
-#name {
+.container h1 {
   font-size: 1.25rem;
+}
+
+@media (min-width: 667px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .avatar {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 75%
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 66%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .container {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 25%;
+  }
+
+  .avatar {
+    width: 50%;
+  }
 }
