@@ -11,7 +11,7 @@ body {
   background: #20244c;
   width: 50%;
   margin: auto;
-  padding: 30px 50px;
+  padding: 1.75em 3em;
 }
 
 #score-section {
@@ -22,12 +22,16 @@ body {
 
 .score-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   text-align: center;
   padding-left: 0;
-  padding-bottom: 30px;
   margin: 0;
   list-style-type: none;
+}
+
+li {
+  margin-bottom: 2em;
 }
 
 .title {
@@ -35,7 +39,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  margin: 0 0 10px 0;
+  margin: 0 0 0.25em 0;
 }
 
 .score {
@@ -43,26 +47,91 @@ body {
   background: #000000;
   font-family: Cursed Timer;
   font-size: 4.5rem;
-  margin: 0 0 20px 0;
-  padding: 20px 0 10px 0;
+  margin: 0 0 0.25em 0;
+  padding: 0.25em 0;
   border-radius: 5px;
 }
 
 button {
   background: #20244c;
   color: #a4b3df;
-  border: 2px solid #a4b3df;
+  border: 0.3vh solid #a4b3df;
   border-radius: 5px;
-  height: 45px;
+  height: 6vh;
 }
 
 .add-btn {
-  width: 45px;
+  width: 25%;
   font-family: Cursed Timer;
   font-size: 1.25rem;
 }
 
-#new-game {
-  width: 33%;
+.new-game {
+  width: 75%;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .score {
+    display: block;
+    width: 50%;
+    margin: .25em auto;
+  }
+
+  .add-btn {
+    width: 15%;
+    height: 5vh;
+  }
+
+  .new-game {
+    width: 48%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 66%;
+  }
+
+  .score-container {
+    flex-direction: row;
+  }
+
+  .score {
+    display: block;
+    width: 80%;
+    margin: .25em auto;
+  }
+
+  .add-btn {
+    width: 25%;
+    height: 3vh;
+    padding-right: 1em;
+  }
+
+  .new-game {
+    width: 70%;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .add-btn {
+    height: 3.5vh;
+  }
+
+  .new-game {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 50%;
+  }
+
+  .new-game {
+    width: 60%;
+  }
 }
