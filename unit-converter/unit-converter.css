@@ -3,6 +3,12 @@
   src: url('../assets/fonts/Inter.ttf');
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: #1f2937;
@@ -14,82 +20,123 @@ label {
   color: #ffffff;
 }
 
-#header-container {
+.header-container {
   width: 100%;
-  height: 260px;
   background: #6943ff;
-  padding-top: 30px;
-  margin-bottom: 40px;
+  padding-top: 1.75em;
+  padding-bottom: 1em;
+  margin-bottom: 2.5em;
 }
 
-#header {
-  width: 450px;
-  margin: 0 auto 30px;
+.header {
+  width: 100%;
+  margin: 0 auto 0.75em;
   font-weight: 800;
   font-size: 1.75rem;
   color: #ffffff;
 }
 
-#conversion-input {
+.conversion-input,
+.convert-btn {
+  width: 30%;
+}
+
+.conversion-input {
   display: block;
-  width: 120px;
-  height: 85px;
-  margin: 0 auto 30px;
+  margin: 0 auto 0.5em;
   font-weight: 800;
   font-size: 3.75rem;
   color: #ffffff;
   text-align: center;
   background: #6943ff;
   border: none;
-  border: 2px solid #b295ff;
-  border-radius: 5px;
+  border: 0.05em solid #b295ff;
+  border-radius: 0.1em;
 }
 
-#conversion-input:-webkit-autofill {
+.conversion-input:-webkit-autofill {
   background-clip: text; /* Needed for auto-complete */
   -webkit-text-fill-color: #ffffff; /* Needed for auto-complete */
   caret-color: #ffffff; /* Needed for auto-complete */
 }
 
-#conversion-input::placeholder {
+.conversion-input::placeholder {
   -webkit-text-fill-color: #ebebeb;
 }
 
-#conversion-input:focus {
+.conversion-input:focus {
   outline: none;
 }
 
-#convert-btn {
-  width: 120px;
-  height: 45px;
+.convert-btn {
+  height: 2.75em;
+  padding: 0.75em;
   background: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3em;
   font-weight: 500;
   font-size: 1rem;
   color: #3d3d3d;
-  padding: 10px ;
 }
 
 .conversion-value-container {
-  width: 500px;
-  height: 110px;
-  margin: 0 auto 25px;
+  width: 90%;
+  margin: 0 auto 1.5em;
+  padding: 0 1em;
   background: #273549;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 0.25em;
 }
 
 .unit-type{
-  margin: 25px 0 0;
+  margin: 1.25em 0 0;
   font-weight: 600;
   font-size: 1.25rem;
   color: #ccc1ff;
 }
 
 .unit-data {
-  font-size: 1rem;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .conversion-input,
+  .convert-btn {
+    width: 15%;
+  }
+
+  .conversion-value-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .conversion-input,
+  .convert-btn {
+    width: 12%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .conversion-input,
+  .convert-btn {
+    width: 8%;
+  }
+
+  .conversion-value-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .conversion-input,
+  .convert-btn {
+    width: 5%;
+  }
+
+  .conversion-value-container {
+    width: 20%;
+  }
 }
