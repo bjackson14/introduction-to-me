@@ -1,11 +1,16 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #938EB5;
 }
 
-#header {
-  height: 350px;
+header {
+  width: 100%;
   background-image: url("../assets/imgs/atlanta.jpg");
   background-size: cover;
   background-position: center;
@@ -16,68 +21,79 @@ body {
   color: #ffffff;
 }
 
-#header-title, #header-description {
-  border-radius: 10px;
+.header-title, .header-description {
+  border-radius: 0.3em;
 }
 
-#header-title {
-  background: #211624;
-  padding: 5px 10px;
+.header-title {
+  padding: 0.25em 0.5em;
   margin-bottom: 0;
+  text-shadow: 0 0 4px #211624;
 }
 
-#header-description {
-  width: 355px;
-  background: #202E4A;
-  padding: 5px 20px;
+.header-description {
+  width: 75%;
+  padding: 0.5em;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0.75em;
+  font-weight: 400;
+  text-shadow: 0 0 4px #202E4A;
 }
 
-#main {
+main {
   color: #202E4A;
   background: #F2BA9D;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 0
+  padding: 1.25em 0
 }
 
-#activity-section {
+.activity-section {
   width: 100%;
 }
 
-#activity-list {
+.activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity-list {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 3em;
   list-style-type: none;
   padding-left: 0;
+  gap: 2em
 }
 
 .activity-img {
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  max-height: 600px;
   border-radius: 50%;
 }
 
 .activity-title {
   font-weight: bold;
-  width: 180px;
+  width: 33%;
+  min-height: 4em;
+  margin-bottom: 0;
 }
 
 .activity-description {
-  width: 200px;
+  width: 50%;
 }
 
-#footer {
-  padding: 100px 0;
+.footer {
+  padding: 1em 0;
 }
 
-#guide-container {
-  width: 400px;
+.guide-container {
+  width: 90%;
   margin: 0 auto;
   color: #ffffff;
   background: #202E4A;
@@ -85,24 +101,56 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 10px;
-  border-bottom: 4px solid #211B28;
+  gap: 1em;
+  padding: 1em;
+  border-bottom: 0.25em solid #211B28;
 }
 
-#guide-img {
-  width: 180px;
-  margin: 10px;
+.guide-img {
+  width: 50%;
 }
 
-#guide-title {
+.guide-title {
+  margin:  0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-#guide-quote {
+.guide-quote {
   font-style: italic;
 }
 
-#guide-name {
+.guide-name {
+  margin: 0;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 25vh;
+  }
+
+  .activity-list {
+    flex-direction: row;
+  }
+  
+  .activity-img {
+    width: 66%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .guide-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1600px) {
+  header {
+    background-position: bottom;
+  }
+
+  .guide-container {
+    width: 25%;
+  }
 }

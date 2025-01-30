@@ -11,13 +11,13 @@
 body {
   margin: 0;
   font-family: 'Smythe';
-  width: 600px;
+  width: 100%;
   color: #000000;
 }
 
 header {
-  margin-bottom: 50px;
-  height: 175px;
+  margin-bottom: 3em;
+  padding-bottom: 4em;
   background-image: url('../assets/imgs/burger-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,37 +37,38 @@ h4 {
   font-weight: 400;
 }
 
-.header-title,
 .header-descritpion,
 main,
 footer {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
   margin: 0;
 }
 
 .header-title{
-  padding-top: 40px;
-  padding-bottom: 20px;
+  margin: 0;
+  padding: 1em 2em 0.25em 1.5em;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
   font-size: 2.5rem;
-  line-height: 24px;
 }
+
 .header-descritpion {
   font-size: 1.5rem;
 }
 
 .menu-item {
-  margin-top: 40px;
+  margin-top: 2.5em;
   display: flex;
   align-items: center;
-  padding-bottom: 40px;
-  border-bottom: solid 1px #d2d2d2;
+  padding-bottom: 2.5em;
+  border-bottom: solid 0.4vh #d2d2d2;
 }
 
 .item-icon {
   margin: 0;
   font-size: 6rem;
-  line-height: 100px;
+  line-height: 1.1;
 }
 
 .item-info {
@@ -83,13 +84,11 @@ footer {
 .total-label {
   margin: 0;
   font-size: 1.75rem;
-  line-height: 20px;
 }
 
 .item-description {
-  margin: 10px 0;
-  font-size: 1rem;
-  line-height: 24px;
+  margin: 0.7em 0;
+  line-height: 1.5;
   color: #8b8b8b;
 }
 
@@ -97,16 +96,17 @@ footer {
 .total-price {
   margin: 0;
   font-size: 1.25rem;
-  line-height: 24px;
+  line-height: 1.25;
 }
 
 .add-btn {
   display: flex;
   justify-content: center;
-  height: 50px;
-  width: 50px;
+  align-items: center;
+  height: 10%;
+  width: 20%;
   background-color: #ffffff;
-  border: solid 1.5px #dedede;
+  border: solid 0.25vh #dedede;
   border-radius: 50%;
   font-family: 'Inter';
   font-weight: 200;
@@ -115,11 +115,11 @@ footer {
 }
 
 .footer-header {
-  margin: 40px;
+  margin: 1em;
 }
 
 .footer-item-container {
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
 }
 
 .footer-item-container,
@@ -135,12 +135,12 @@ footer {
 }
 
 .footer-separator {
-  border-bottom: solid 2px #393333;
- margin: 20px 0;
+  border-bottom: solid 0.5vh #393333;
+  margin: 1.25em 0;
 }
 
 .footer-total {
-  margin-bottom: 50px;
+  margin-bottom: 3em;
 }
 
 .remove-btn {
@@ -149,12 +149,12 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.75rem;
   color: #bbbbbb;
-  line-height: 24px;
+  line-height: 2;
 }
 
 .complete-btn {
   width: 100%;
-  height: 60px;
+  height: 10vh;
   background-color: #16db99;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -167,23 +167,23 @@ footer {
 .payment-popup {
   display: none;
   position: absolute;
-  left: 38px;
-  top: 292px;
-  width: 524px;
-  height: 542px;
+  left: 5vw;
+  top: 70vh;
+  width: 90%;
+  height: 80%;
   text-align: center;
-  border: solid 1px #757575;
+  border: solid 0.25vh #757575;
   border-radius: 4px;
   background-color: #ffffff;
-  box-shadow: 6px 6px 255px #000000;
+  box-shadow: 6px 6px 90vh #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 .payment-popup-header {
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 31px;
-  margin: 40px 0 60px 0;
+  margin: 1.75em 0 2.5em 0;
 }
 
 .payment-popup form {
@@ -194,30 +194,28 @@ footer {
 
 .payment-popup input,
 .payment-popup button {
-  height: 71px;
+  height: 3.5em;
   border-radius: 4px;
   font-size: 1.25rem;
-  line-height: 31px;
+  line-height: 1.5;
 }
 
 .payment-popup input {
-  width: 475px;
+  width: 80%;
   color: #757575;
-  margin-bottom: 20px;
-  border: solid 1px #757575;
-  padding-left: 20px;
+  margin-bottom: 1.25em;
+  border: solid 0.1vh #757575;
+  padding-left: 1.25em;
 }
 
 input:-webkit-autofill {
   border: 1px solid #757575;
   -webkit-text-fill-color: #757575;
-  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-box-shadow: 0 0 0 10vh #ffffff inset;
 }
 
 .payment-popup button {
-  width: 488px;
-  margin-top: 20px;
-  box-sizing: content-box;
+  width: 90%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   background-color: #16db99;
@@ -229,7 +227,90 @@ input:-webkit-autofill {
   background-color: #ecfdf5;
   color: #065f46;
   border-radius: 3px;
-  font-size: 28px;
-  line-height: 30px;
-  padding: 60px;
+  font-size: 1.75rem;
+  padding: 2em;
+}
+
+@media (min-width: 768px) {
+  body,
+  .payment-popup {
+    width: 66%;
+    margin: auto;
+  }
+
+  .add-btn {
+    width: 12%;
+  }
+
+  .footer-separator {
+    border-width: .25vh;
+  }
+
+  .complete-btn {
+    height: 5vh;
+  }
+
+  .payment-popup {
+    left: 17vw;
+    top: 30vh;
+    height: 55%;
+    border-width: 0.1vh;
+  }
+
+  .payment-popup button {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  body,
+  .payment-popup {
+    width: 50%;
+  }
+
+  .item-title,
+  .total-label {
+    font-size: 2.25rem;
+  }
+
+  .item-description,
+  .complete-btn {
+    font-size: 1.25rem;
+  }
+
+  .item-price,
+  .total-price {
+    font-size: 1.75rem;
+  }
+
+  .add-btn {
+    width: 10%;
+  }
+
+  .footer-header {
+    font-size: 2rem;
+  }
+  
+  .remove-btn {
+    font-size: 1rem;
+  }
+
+  .payment-popup {
+    left: 25vw;
+    height: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  body,
+  .payment-popup {
+    width: 25%;
+  }
+
+  .add-btn {
+    width: 8%;
+  }
+
+  .payment-popup {
+    left: 37.5vw;
+  }
 }
