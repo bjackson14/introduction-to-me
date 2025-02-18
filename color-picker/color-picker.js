@@ -21,12 +21,13 @@ function addColorToContainer(color) {
   const colorDiv = document.createElement('div');
   const hexCode = document.createElement('div');
 
-  colorContainer.classList.add('color-container')
+  colorContainer.classList.add('color-container');
 
-  colorDiv.classList.add('color')
+  colorDiv.classList.add('color');
   colorDiv.style.backgroundColor = color;
+  colorDiv.ariaLabel = `Box container color hex code ${color}`;
 
-  hexCode.classList.add('hex-code')
+  hexCode.classList.add('hex-code');
   hexCode.textContent = color;
 
   colorContainer.appendChild(colorDiv);

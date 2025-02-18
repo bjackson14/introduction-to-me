@@ -18,7 +18,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 0.5em;
   padding: 1em 0.5em;
 }
@@ -61,6 +61,7 @@ button {
   line-height: 1.5;
   border: solid 0.06em #d1d5db;
   padding: 1em;
+  cursor: pointer;
 }
 
 .color-grid {
@@ -82,4 +83,10 @@ button {
   line-height: 2;
   text-align: center;
   color: #2b283a;
+}
+
+@media (min-width: 400px) {
+  select {
+    width: auto;
+  }
 }
