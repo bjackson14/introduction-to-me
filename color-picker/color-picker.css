@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Inter;
+  src: url('../assets/fonts/Inter.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fffdfe;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 1em 0.5em;
+}
+
+input[type=color],
+select,
+button {
+  border-radius: 0.25em;
+}
+
+input[type=color] {
+  height: auto;
+  border: solid 0.03em #d1d5db;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border: solid 0.03em #313131;
+}
+
+select,
+option {
+  font-family: Inter;
+  font-weight: 400;
+  color: #111827;
+  padding: 0.5em;
+}
+
+select {
+  width: 45%;
+  border-color: #d1d5db;
+}
+
+button {
+  background-color: #ffffff;
+  color: #374151;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border: solid 0.06em #d1d5db;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.color-container {
+  height: 80vh;
+}
+
+.color {
+  height: 100%;
+}
+
+.hex-code {
+  margin-top: 1.5em;
+  font-size: 0.75rem;
+  line-height: 2;
+  text-align: center;
+  color: #2b283a;
+}
+
+@media (min-width: 400px) {
+  select {
+    width: auto;
+  }
+}
