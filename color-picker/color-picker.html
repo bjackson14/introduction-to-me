@@ -9,8 +9,8 @@
   <body>
 
     <header>
-      <input type="color" value="#f55a5a"/>
-      <select>
+      <input type="color" id="color-input" value="#f55a5a" aria-label="Select a color"/>
+      <select id="mode-select">
         <option value="monochrome">Monochrome</option>
         <option value="monochrome-dark">Monochrome-dark</option>
         <option value="monochrome-light">Monochrome-light</option>
@@ -19,8 +19,10 @@
         <option value="analogic-complement">Analogic-complement</option>
         <option value="triad">Triad</option>
       </select>
-      <button type="submit">Get color Scheme</button>
+      <button type="submit" id="color-btn">Get color Scheme</button>
     </header>
 
   </body>
+
+  <script src="./color-picker.js"></script>
 </html>
