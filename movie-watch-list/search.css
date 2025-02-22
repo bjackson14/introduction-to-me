@@ -15,6 +15,7 @@ body {
 }
 
 header {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -43,6 +44,58 @@ header ul a {
   font-size: 0.75rem;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.search-bar {
+  position: absolute;
+  bottom: -10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 0 1em;
+  border: solid 0.06em #d1d5db;
+  border-radius: 0.4em;
+  background-color: #ffffff;
+}
+
+.search-bar .input-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / 3;
+  align-items: center;
+}
+
+.search-bar .input-container input {
+  font-family: Inter;
+  font-weight: 500;
+  border: none;
+  grid-column: 2 / 13;
+  height: fit-content;
+}
+
+.search-bar .input-container input:focus,
+.search-bar button:focus,
+header ul a {
+  outline: none;
+}
+
+.search-bar .input-container input,
+.search-bar .input-container i {
+  font-size: 0.75rem;
+  color: #5b7280;
+}
+
+.search-bar .input-container,
+.search-bar button {
+  padding: 0.5em;
+}
+
+.search-bar button {
+  height: 100%;
+  border: none;
+  background-color: #f9fafb;
+  color: #374151;
   cursor: pointer;
 }
 
