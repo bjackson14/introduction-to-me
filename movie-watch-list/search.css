@@ -74,10 +74,18 @@ header ul a {
   height: fit-content;
 }
 
+.search-bar .input-container input:active,
 .search-bar .input-container input:focus,
+.search-bar button:focus:active,
 .search-bar button:focus,
 header ul a {
   outline: none;
+}
+
+.search-bar .input-container input:-webkit-autofill {
+  background-clip: text;
+  -webkit-text-fill-color: #5b7280;
+  caret-color: #5b7280;
 }
 
 .search-bar .input-container input,
@@ -97,6 +105,11 @@ header ul a {
   background-color: #f9fafb;
   color: #374151;
   cursor: pointer;
+  border-radius: 0 0.4em 0.4em 0;
+}
+
+.required {
+  border: solid 0.06em #ff4d4d;
 }
 
 .empty-list {

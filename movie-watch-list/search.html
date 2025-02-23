@@ -11,18 +11,18 @@
   <body>
 
     <header>
-      
+
       <h1>Find your film</h1>
       <ul>
         <li><a href="#">My Watchlist</a></li>
       </ul>
 
-      <section class="search-bar">
+      <section id="search-bar" class="search-bar">
         <div class="input-container">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search for a movie" />
+          <input type="text" id="search" placeholder="Search for a movie" required />
         </div>
-        <button>Search</button>
+        <button type="submit" id="search-btn">Search</button>
       </section>
 
     </header>
@@ -37,5 +37,7 @@
     </main>
 
   </body>
+
+  <script src="search.js" type="module"></script>
 
 </html>
