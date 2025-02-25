@@ -5,24 +5,33 @@ let movies = JSON.parse(localStorage.getItem('movies'));
 document.getElementById('search-btn').addEventListener('click', () => {
   const searchTerm = document.getElementById('search').value;
   const searchBar = document.getElementById('search-bar');
+  const emptyList = document.getElementById('empty-list');
 
   // If search term is truthy, then get a list of movies that matches where the title matches the search term
   if (searchTerm) {
+    moviesContainer.innerHTML = '';
     searchBar.classList.remove('required');
+    emptyList.classList.remove('hidden');
     fetch(`http://www.omdbapi.com/?apikey=${omdbApiKey}&s=${searchTerm}&type=movie`)
       .then(res => res.json())
       .then(data => {
-        // Hides the initial message on the screen
-        document.getElementById('empty-list').classList.add('hidden');
-        moviesContainer.innerHTML = '';
+        if(data.Response === "True") {
+          // Hides the initial message on the screen
+          emptyList.classList.add('hidden');
 
-        // loops through the array of movies and gets info of each individual movie using the imdbID
-        for(let movie of data.Search) {
-          fetch(`http://www.omdbapi.com/?apikey=${omdbApiKey}&i=${movie.imdbID}`)
-            .then(res => res.json())
-            .then(data => {
-              buildMovieInfoHtml(data);
-            });
+          // loops through the array of movies and gets info of each individual movie using the imdbID
+          for(let movie of data.Search) {
+            fetch(`http://www.omdbapi.com/?apikey=${omdbApiKey}&i=${movie.imdbID}`)
+              .then(res => res.json())
+              .then(data => {
+                buildMovieInfoHtml(data);
+              });
+          }
+        } else {
+          // If movie is not found, change message on empty list screen
+          const message = document.getElementById('message')
+          message.textContent = `Couldn't find movie`;
+          message.classList.add('not-found')
         }
       });
   } else {

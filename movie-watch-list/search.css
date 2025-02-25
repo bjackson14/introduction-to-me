@@ -232,3 +232,7 @@ img {
   font-size: 0.75rem;
   color: #111827;
 }
+
+.not-found {
+  color: #ff4d4d;
+}
