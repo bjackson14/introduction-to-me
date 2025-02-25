@@ -34,12 +34,12 @@ h1 {
   font-size: 2 rem;
 }
 
-header ul {
+ul {
   padding: 0;
   list-style: none;
 }
 
-header ul a {
+ul a {
   font-weight: 700;
   font-size: 0.75rem;
   color: inherit;
@@ -59,14 +59,14 @@ header ul a {
   background-color: #ffffff;
 }
 
-.search-bar .input-container {
+.input-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column: 1 / 3;
   align-items: center;
 }
 
-.search-bar .input-container input {
+.input-container input {
   font-family: Inter;
   font-weight: 500;
   border: none;
@@ -74,27 +74,26 @@ header ul a {
   height: fit-content;
 }
 
-.search-bar .input-container input:active,
-.search-bar .input-container input:focus,
+.input-container input:active,
+.input-container input:focus,
 .search-bar button:focus:active,
 .search-bar button:focus,
 header ul a {
   outline: none;
 }
 
-.search-bar .input-container input:-webkit-autofill {
+.input-container input:-webkit-autofill {
   background-clip: text;
   -webkit-text-fill-color: #5b7280;
   caret-color: #5b7280;
 }
 
-.search-bar .input-container input,
-.search-bar .input-container i {
+.input-container input,
+.input-container i {
   font-size: 0.75rem;
   color: #5b7280;
 }
-
-.search-bar .input-container,
+.input-container,
 .search-bar button {
   padding: 0.5em;
 }
@@ -125,4 +124,111 @@ header ul a {
 .empty-list p {
   margin: 0.5em 0;
   font-size: 1.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.movies {
+  margin-top: 4em;
+}
+
+.movie-info-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 2em;
+  padding-bottom: 2em;
+  border-bottom: solid 0.06em black;
+}
+
+.poster-container {
+  align-self: center;
+  width: 30vh;
+}
+
+img {
+  width: 100%;
+}
+
+.movie-flex-container,
+.movie-grid-container,
+.plot {
+  margin-top: 1em;
+}
+
+.movie-info-container h2,
+.movie-flex-container p,
+.movie-grid-container p {
+  margin: 0;
+}
+
+.movie-flex-container,
+.watchlist-container,
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.movie-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.runtime {
+  grid-column: 1 / 4;
+}
+
+.genre {
+  grid-column: 4 / 9;
+}
+
+.watchlist-container {
+  grid-column: 9 / 12;
+}
+
+.movie-flex-container,
+.movie-grid-container {
+  gap: 1em;
+}
+
+.watchlist-container,
+.rating-container {
+  gap: 0.25em;
+}
+
+.plus-icon {
+  align-self: center;
+  font-size: 0.75rem;
+  padding: 0.35em;
+  background-color: #111827;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.movie-info-container .plot {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.movie-info-container .plot,
+.title {
+  line-height: 1.5;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.rating-container i {
+  color: #fec654;
+}
+
+.movie-info-container p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #111827;
 }
