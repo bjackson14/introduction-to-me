@@ -64,19 +64,8 @@
   border: solid 0.06em #ff4d4d;
 }
 
-.empty-list {
-  padding-top: 25vh;
-  text-align: center;
-  color: #dfdddd;
-}
-
 .empty-list i {
   font-size: 4rem;
-}
-
-.empty-list p {
-  margin: 0.5em 0;
-  font-size: 1.25rem;
 }
 
 .hidden {

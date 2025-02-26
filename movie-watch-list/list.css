@@ -1,11 +1,15 @@
-.flex-container {
+.empty-list a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5em;
 }
 
-.empty-list .flex-container p {
-  font-size: 0.75rem;
+.empty-list a p {
+  font-size: 0.75em;
+}
+
+.empty-list a,
+.empty-list a p {
   color: #111827;
 }

@@ -50,3 +50,24 @@ ul a {
   cursor: pointer;
   outline: none;
 }
+
+.empty-list {
+  padding-top: 25vh;
+  text-align: center;
+  color: #dfdddd;
+}
+
+.empty-list p {
+  margin: 0.5em 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.plus-icon {
+  align-self: center;
+  font-size: 0.75rem;
+  padding: 0.35em;
+  background-color: #111827;
+  color: #ffffff;
+  border-radius: 50%;
+}
