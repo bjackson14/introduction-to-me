@@ -63,11 +63,109 @@ ul a {
   font-weight: 700;
 }
 
-.plus-icon {
-  align-self: center;
+.fa-plus,
+.fa-minus {
   font-size: 0.75rem;
   padding: 0.35em;
   background-color: #111827;
   color: #ffffff;
   border-radius: 50%;
+}
+
+.movies {
+  margin-top: 2em;
+}
+
+.movie-info-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 2em;
+  padding-bottom: 2em;
+  border-bottom: solid 0.06em black;
+}
+
+.poster-container {
+  align-self: center;
+  width: 30vh;
+}
+
+img {
+  width: 100%;
+}
+
+.movie-flex-container,
+.movie-grid-container,
+.plot {
+  margin-top: 1em;
+}
+
+.movie-info-container h2,
+.movie-flex-container p,
+.movie-grid-container p {
+  margin: 0;
+}
+
+.movie-flex-container,
+.watchlist-container,
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.movie-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.runtime {
+  grid-column: 1 / 4;
+}
+
+.genre {
+  grid-column: 4 / 9;
+}
+
+.watchlist-container {
+  grid-column: 9 / 12;
+}
+
+.movie-flex-container,
+.movie-grid-container {
+  gap: 1em;
+}
+
+.watchlist-container,
+.rating-container {
+  gap: 0.25em;
+}
+
+.movie-info-container .plot {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.movie-info-container .plot,
+.title {
+  line-height: 1.5;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.rating-container i {
+  color: #fec654;
+}
+
+.movie-info-container p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #111827;
+}
+
+.hidden {
+  display: none;
 }
