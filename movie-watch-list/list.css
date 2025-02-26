@@ -1,0 +1,11 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.empty-list .flex-container p {
+  font-size: 0.75rem;
+  color: #111827;
+}
