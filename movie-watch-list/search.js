@@ -34,27 +34,29 @@ document.getElementById('search-btn').addEventListener('click', async () => {
 function renderMovieInfoHtml(movie) {
   const movieSection = document.createElement('section');
 
-  movieSection.classList.add('movie-info-container');
+  movieSection.classList.add('movie-container');
   movieSection.innerHTML = `
     <div class="poster-container">
       <img src="${movie.Poster === 'N/A' ? '' : movie.Poster}" alt="Poster for ${movie.Title}" />
     </div>
-    <div class="movie-flex-container">
-      <h2 class="title">${movie.Title}</h2>
-      <div class="rating-container">
-        <i class="fa-solid fa-star"></i>
-        <p>${movie.Ratings.find(element => element.Source === 'Internet Movie Database').Value}</p>
+    <div class="movie-info-container">
+      <div class="movie-flex-container">
+        <h2 class="title">${movie.Title}</h2>
+        <div class="rating-container">
+          <i class="fa-solid fa-star"></i>
+          <p>${movie.Ratings.find(element => element.Source === 'Internet Movie Database').Value}</p>
+        </div>
       </div>
-    </div>
-    <div class="movie-grid-container">
-      <p class="runtime">${movie.Runtime}</p>
-      <p class="genre">${movie.Genre}</p>
-      <div class="watchlist-container">
-        <i class="fa-solid ${movies && movies.includes(movie.imdbID) ? 'fa-minus' : 'fa-plus'}" id="${movie.imdbID}"></i>
-        <p>Watchlist</p>
+      <div class="movie-grid-container">
+        <p class="runtime">${movie.Runtime}</p>
+        <p class="genre">${movie.Genre}</p>
+        <div class="watchlist-container">
+          <i class="fa-solid ${movies && movies.includes(movie.imdbID) ? 'fa-minus' : 'fa-plus'}" id="${movie.imdbID}"></i>
+          <p>Watchlist</p>
+        </div>
       </div>
+      <p class="plot">${movie.Plot}</p>
     </div>
-    <p class="plot">${movie.Plot}</p>
   `;
   movieSection.querySelector('.watchlist-container').addEventListener('click', () => changeWatchList(movie.imdbID));
   moviesContainer.appendChild(movieSection);

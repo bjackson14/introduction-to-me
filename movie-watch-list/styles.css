@@ -76,7 +76,7 @@ ul a {
   margin-top: 2em;
 }
 
-.movie-info-container {
+.movie-container {
   display: flex;
   flex-direction: column;
   margin: 2em 2em;
@@ -99,7 +99,7 @@ img {
   margin-top: 1em;
 }
 
-.movie-info-container h2,
+.movie-container h2,
 .movie-flex-container p,
 .movie-grid-container p {
   margin: 0;
@@ -140,13 +140,13 @@ img {
   gap: 0.25em;
 }
 
-.movie-info-container .plot {
+.movie-container .plot {
   margin-bottom: 0;
   font-size: 1rem;
   color: #6b7280;
 }
 
-.movie-info-container .plot,
+.movie-container .plot,
 .title {
   line-height: 1.5;
 }
@@ -160,7 +160,7 @@ img {
   color: #fec654;
 }
 
-.movie-info-container p {
+.movie-container p {
   font-weight: 400;
   font-size: 0.75rem;
   color: #111827;
@@ -168,4 +168,19 @@ img {
 
 .hidden {
   display: none;
+}
+
+@media (min-width: 667px) {
+  .movie-container {
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .poster-container {
+    max-width: 150px
+  }
+
+  .movie-info-container {
+    width: 100%;
+  }
 }
