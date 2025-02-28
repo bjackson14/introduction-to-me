@@ -1,0 +1,77 @@
+/**
+  Search bar
+**/
+.search-bar {
+  position: absolute;
+  bottom: -10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 0 1em;
+  border: solid 0.06em #d1d5db;
+  border-radius: 0.4em;
+  background-color: #ffffff;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / 3;
+  align-items: center;
+}
+
+.input-container input {
+  font-family: Inter;
+  font-weight: 500;
+  border: none;
+  grid-column: 2 / 13;
+  height: fit-content;
+}
+
+.input-container input:active,
+.input-container input:focus,
+.search-bar button:focus:active,
+.search-bar button:focus {
+  outline: none;
+}
+
+.input-container input:-webkit-autofill {
+  background-clip: text;
+  -webkit-text-fill-color: #5b7280;
+  caret-color: #5b7280;
+}
+
+.input-container input,
+.input-container i {
+  font-size: 0.75rem;
+  color: #5b7280;
+}
+.input-container,
+.search-bar button {
+  padding: 0.5em;
+}
+
+.search-bar button {
+  height: 100%;
+  border: none;
+  background-color: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 0 0.4em 0.4em 0;
+}
+
+.required {
+  border: solid 0.06em #ff4d4d;
+}
+
+.empty-list i {
+  font-size: 4rem;
+}
+
+.movies {
+  margin-top: 4em;
+}
+
+.not-found {
+  color: #ff4d4d;
+}

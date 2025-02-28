@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watch List</title>
+    <link rel="stylesheet" href="list.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/d262db8908.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    
+    <header>
+
+      <h1>My Watchlist</h1>
+      <ul>
+        <li><a href="./search.html">Search for movies</a></li>
+      </ul>
+
+    </header>
+
+    <main>
+
+      <section id="empty-list" class="empty-list">
+        <div>
+          <p>Your watchlist is looking a little empty</p>
+          <a href="./search.html">
+            <i class="fa-solid fa-plus plus-icon"></i>
+            <p>Let's add some movies</p>
+          </a>
+        </div>
+
+      </section>
+
+      <div id="movies" class="movies"></div>
+
+    </main>
+
+  </body>
+
+  <script src="list.js" type="module"></script>
+
+</html>
