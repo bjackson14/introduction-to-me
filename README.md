@@ -1,5 +1,40 @@
-# introduction-to-me
-A website meant to introduce myself and my experience in software engineering
+# Introduction to Me
+
+A website meant to introduce myself and my experience in software engineering.
+
+---
+
+# React Components Documentation
+
+## Badge
+
+The `Badge` component provides an inline element to display formatted text on the page.
+
+### Props
+
+- `shape` (optional): Determines the shape of the badge.  
+  - Options: `'square'` (default), `'pill'`
+- `color` (optional): Sets the color of the badge.  
+  - Options: `'grey'` (default), `'red'`, `'yellow'`, `'green'`, `'blue'`, `'indigo'`, `'purple'`, `'pink'`
+
+### Usage
+
+**Square, grey badge displaying "Text Here":**
+```jsx
+<Badge>Text Here</Badge
+```
+
+**Pill-shaped, grey badge displaying "Text Here":**
+```jsx
+<Badge shape="pill">Text Here</Badge>
+```
+
+**Pill-shaped, blue badge displaying "Text Here":**
+```jsx
+<Badge shape="pill" color="blue">Text Here</Badge>
+```
+
+---
 
 # React + Vite
 
