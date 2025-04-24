@@ -106,6 +106,35 @@ The `Banner` component provides a block-level element for displaying messages to
 </Banner>
 ```
 
+---
+
+## Card
+
+The `Card` component provides a block-level element for displaying information to the user. It can display only a header, a header with a message, or just a message.
+
+## Props
+
+-  `header` (optional): the title of the message that needs to be displayed
+
+## Usage
+
+**Card with just a header**
+```
+<Card header="Easy Deployment" />
+```
+
+**Card with header and message**
+```
+<Card header="Easy Deployment">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card>
+```
+
+**Card with message**
+```
+<Card>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card>
+```
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
