@@ -66,7 +66,7 @@ The `Banner` component provides a block-level element for displaying messages to
 **Neutral banner with just a title and message**
 ```
 <Banner title="Update available">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+  Text Here
 </Banner>
 ```
 
@@ -78,7 +78,7 @@ The `Banner` component provides a block-level element for displaying messages to
 **Sucess banner with just a title and message**
 ```
 <Banner type="success" title="Congratulations!">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+  Text Here
 </Banner>
 ```
 
@@ -90,7 +90,7 @@ The `Banner` component provides a block-level element for displaying messages to
 **Warning banner with just a title and message**
 ```
 <Banner type="warning" title="Congratulations!">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+  Text Here
 </Banner>
 ```
 
@@ -102,7 +102,7 @@ The `Banner` component provides a block-level element for displaying messages to
 **Error banner with just a title and message**
 ```
 <Banner type="error" title="Congratulations!">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+  Text Here
 </Banner>
 ```
 
@@ -125,12 +125,45 @@ The `Card` component provides a block-level element for displaying information t
 
 **Card with header and message**
 ```
-<Card header="Easy Deployment">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card>
+<Card header="Easy Deployment">
+  Text Here
+</Card>
 ```
 
 **Card with message**
 ```
-<Card>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card>
+<Card>
+  Text Here
+</Card>
+```
+
+---
+
+## Testimonial
+
+The `Testimonial` component displays a user quote in a block-level element. It can optionally include an image, the name of the person being quoted, and their position or affiliation.
+
+## Props
+
+-  `src` (optional): The URL or path to the image of the person being quoted
+-  `alt` (optional): Alternative text for the image
+-  `quotee`: (optional): The name of the person who gave the testimonial
+-  `position`: (optional): The job title or role of the person being quoted
+
+## Usage
+
+**Testimonial with image**
+```
+<Testimonial src="./src/assets/imgs/testimonial-image.jpg" alt="test img" quotee="May Andersons" position="Workcation, CTO">
+  Text Here
+</Testimonial>
+```
+
+**Testimonial without image**
+```
+<Testimonial quotee="May Andersons" position="Workcation, CTO">
+  Text Here
+</Testimonial>
 ```
 
 ---

@@ -1,10 +1,10 @@
-import Card from './components/card/Card'
+import Testimonial from './components/testimonial/Testimonial'
 import './App.css'
 
 export default function App() {
   return (
     <>
-      <Card header="Easy Deployment">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</Card>
+      <Testimonial quotee="May Andersons" position="Workcation, CTO">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. </Testimonial>
     </>
   )
 }
