@@ -168,6 +168,32 @@ The `Testimonial` component displays a user quote in a block-level element. It c
 
 ---
 
+## Tooltip
+
+The `Tooltip` omponent shows a small pop-up box when you hover over or focus on the wrapped text. This box can contain a title and is useful for giving more information without cluttering the page.
+
+### Props
+
+- `title`: The heading or label that appears in the tooltip box
+- `color` (optional): Changes the tooltip’s accent color  
+  - Options: `'default'` (default), `'blue'`, `'pink'`, `'green'`
+- `style` (optional): Adjusts the visual style of the tooltip
+  - Options: `'light'` (default), `'bold'`
+
+### Usage
+
+**Default badge displaying a header and "Text Here":**
+```
+<Tooltip title="Header">Text Here</Tooltip>
+```
+
+**Bold badge with a color property displaying a header and "Text Here":**
+```
+<Tooltip title="Header" style="bold" color="blue">Text Here</Tooltip>
+```
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
