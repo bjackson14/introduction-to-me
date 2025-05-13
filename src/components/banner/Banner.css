@@ -1,0 +1,79 @@
+.container {
+  margin: 0.25em;
+  padding: 1em 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 23fr;
+  grid-template-areas:
+    "icon title"
+    ". message";
+  background-color: #EFF6FF;
+  border-radius: 0.5em;
+}
+
+.container.success {
+  background-color: #ECFDF5;
+}
+
+.container.warning {
+  background-color: #FFFBEB;
+}
+
+.container.error {
+  background-color: #FEF2F2;
+}
+
+.icon {
+  grid-area: icon;
+  align-self: center;
+  justify-self: center;
+  color: #60A5FA;
+}
+
+.icon.success {
+  color: #34D399;
+}
+
+.icon.warning {
+  color: #FBBF24;
+}
+
+.icon.error {
+  color: #F87171;
+}
+
+.title,
+.message {
+  font-family: Inter;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.title {
+  grid-area: title;
+  font-weight: 500;
+  color: #1E40AF;
+}
+
+.title.success {
+  color: #065F46;
+}
+
+.title.warning,
+.title.error {
+  color: #92400E;
+}
+
+.message {
+  grid-area: message;
+  font-weight: 400;
+  color: #1C51B9;
+}
+
+.message.success {
+  color: #047857;
+}
+
+.message.warning,
+.message.error {
+  color: #B45309;
+}

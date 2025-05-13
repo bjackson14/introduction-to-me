@@ -1,0 +1,30 @@
+.container {
+  margin: 0.25em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  width: 33%;
+  font-family: Inter;
+  background-color: #F9FAFB;
+  border-radius: 0.5em;
+}
+
+.container:hover {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2;
+  color: #111827;
+}
+
+.content {
+  margin: 0;
+  line-height: 1.5;
+  color: #6B7280;
+}

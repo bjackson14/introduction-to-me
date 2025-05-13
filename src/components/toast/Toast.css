@@ -1,0 +1,100 @@
+.toast {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  display: grid;
+  grid-template-areas: 
+    'icon title title title'
+    '. content content content';
+  padding: 0.5em;
+  max-width: 250px;
+  font-family: Inter;
+  line-height: 1.5;
+  border-radius: 0.25em;
+}
+
+.toast.success {
+  background-color: #ECFDF5;
+}
+
+.toast.warning {
+  background-color: #FFFBEB;
+}
+
+.toast.information {
+  background-color: #EFF6FF;
+}
+
+.toast.error {
+  background-color: #FEF2F2;
+}
+
+.title,
+.content {
+  font-size: 0.875rem;
+}
+
+.icon {
+  grid-area: icon;
+  align-self: center;
+  justify-self: center;
+}
+
+.icon.success {
+  color: #34D399;
+}
+
+.icon.warning {
+  color: #FBBF24;
+}
+
+.icon.information {
+  color: #60A5FA;
+}
+
+.icon.error {
+  color: #F87171;
+}
+
+.title {
+  grid-area: title;
+  margin: 0;
+  font-weight: 500;
+}
+
+.title.success {
+  color: #065F46;
+}
+
+.title.warning {
+  color: #92400E;
+}
+
+.title.information {
+  color: #1E40AF;
+}
+
+.title.error {
+  color: #92400E;
+}
+
+.content {
+  grid-area: content;
+  margin: 0;
+}
+
+.content.success {
+  color: #047857;
+}
+
+.content.warning {
+  color: #B45309;
+}
+
+.content.information {
+  color: #1C51B9;
+}
+
+.content.error {
+  color: #B45309;
+}
