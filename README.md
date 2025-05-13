@@ -170,7 +170,7 @@ The `Testimonial` component displays a user quote in a block-level element. It c
 
 ## Tooltip
 
-The `Tooltip` omponent shows a small pop-up box when you hover over or focus on the wrapped text. This box can contain a title and is useful for giving more information without cluttering the page.
+The `Tooltip` component shows a small pop-up box when you hover over or focus on the wrapped text. This box can contain a title and is useful for giving more information without cluttering the page.
 
 ### Props
 
@@ -182,14 +182,38 @@ The `Tooltip` omponent shows a small pop-up box when you hover over or focus on 
 
 ### Usage
 
-**Default badge displaying a header and "Text Here":**
+**Default tooltip displaying a header and "Text Here":**
 ```
 <Tooltip title="Header">Text Here</Tooltip>
 ```
 
-**Bold badge with a color property displaying a header and "Text Here":**
+**Bold tooltip with a color property displaying a header and "Text Here":**
 ```
 <Tooltip title="Header" style="bold" color="blue">Text Here</Tooltip>
+```
+
+---
+
+## Toast
+
+The `Toast` component is a small notification box that briefly appears at the bottom of the screen. It's useful for showing quick messages, such as confirmations, warnings, or errors. It will appea at the bottom of the page and stay visible for three seconds.
+
+### Props
+
+- `title`: The heading or label that appears in the toast box
+- `type` (optional): Changes the toast's accent color  
+  - Options: `'information'` (default), `'success'`, `'warning'`, `'error'`
+
+### Usage
+
+**Default toast displaying a header and "Text Here":**
+```
+<Toast title="Header">Text Here</Toast>
+```
+
+**Warning toast with a color property displaying a header and "Text Here":**
+```
+<Toast title="Header" type="warning">Text Here</Toast>
 ```
 
 ---

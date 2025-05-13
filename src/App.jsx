@@ -1,10 +1,10 @@
-import Tooltip from './components/tooltip/Tooltip'
+import Toast from './components/toast/Toast'
 import './App.css'
 
 export default function App() {
   return (
     <>
-      <Tooltip title="Archive Notes">Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+      <Toast title="Success" type="error">Your work has been saved</Toast>
     </>
   )
 }
