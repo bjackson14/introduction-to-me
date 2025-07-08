@@ -8,6 +8,12 @@
 *::after {
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
 body {
   margin: 0;
   font-family: Inter;
@@ -15,6 +21,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 1;
   padding: 1em;
   width: 100%;
   background-color: #ffffff;
@@ -45,16 +52,15 @@ header {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #333333;
   letter-spacing: 1px;
 }
 
-#hamburger-menu-btn,
-#close-menu-btn {
+#hamburger-menu-icon,
+#close-menu-icon {
   width: 1.75em;
 }
 
-#close-menu-btn {
+#close-menu-icon {
   display: none;
 }
 
@@ -64,6 +70,7 @@ header {
   left: 0;
   width: 100%;
   display: none;
+  background-color: #ffffff;
 }
 
 #header-menu-list {
@@ -80,4 +87,41 @@ header {
   color: #333333;
   text-transform: uppercase;
   border-top: 1px solid #eeeeee;
+}
+
+#about {
+  position: relative;
+  height: 100vh;
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 98, 185, 0.8)), url('../assets/imgs/common-bg.svg');
+  background-position: center;
+}
+
+.about-content {
+  margin: 0 1em;
+  position: absolute;
+  top: 25%;
+  text-align: center;
+}
+
+.about-header {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  line-height: 1.5;
+}
+
+.about-info {
+  line-height: 1.5;
+}
+
+.about-link {
+  margin: 3em 1em;
+  padding: 1em 0.75em;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
