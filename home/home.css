@@ -16,7 +16,6 @@ a {
 
 html {
   scroll-behavior: smooth;
-  /* scroll-padding-top: 20vh; */
 }
 
 body {
@@ -117,6 +116,10 @@ p {
   background-position: center;
 }
 
+#hero p {
+  color: #ffffff;
+}
+
 .hero-content {
   margin: 0 1em;
   position: absolute;
@@ -128,10 +131,6 @@ p {
   text-transform: uppercase;
   letter-spacing: .2em;
   line-height: 1.5;
-}
-
-.hero-info {
-  color: #ffffff;
 }
 
 .hero-link {
@@ -240,4 +239,44 @@ p {
   font-weight: 600;
   background-color: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
+}
+
+#contact {
+  padding: 3em 0;
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 98, 185, 0.8)), url('../assets/imgs/common-bg.svg');
+  background-position: center;
+}
+
+#contact p {
+  color: #ffffff;
+}
+
+#contact h2 {
+  position: relative;
+  margin-top: 2em;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#contact h2::after {
+  content: '';
+  position: absolute;
+  top: 1.5em;
+  height: 5px;
+  width: 1em;
+  background: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+#contact a,
+#contact a:visited,
+#contact a:hover,
+#contact a:active {
+  color: #ffffff;
+  text-decoration: underline;
 }
