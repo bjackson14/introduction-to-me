@@ -111,12 +111,18 @@ p {
 #hero {
   margin: 0;
   height: 90vh;
-  color: #ffffff;
+}
+
+#hero,
+#contact {
   background: linear-gradient(rgba(0, 98, 185, 0.8)), url('../assets/imgs/common-bg.svg');
   background-position: center;
 }
 
-#hero p {
+#hero,
+#hero p,
+#contact,
+#contact p {
   color: #ffffff;
 }
 
@@ -127,7 +133,6 @@ p {
 }
 
 .hero-header {
-  /* margin: ; */
   font-size: 1.75rem;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -166,11 +171,14 @@ p {
   border-radius: 5px;
 }
 
-#projects {
+#projects,
+#about,
+#contact {
   padding: 3em 0;
 }
 
-#projects h3 {
+#projects h3,
+#about h3 {
   margin-bottom: 1em;
 }
 
@@ -201,12 +209,7 @@ p {
 }
 
 #about {
-  padding: 3em 0;
   background-color: #fafafa;
-}
-
-#about h3 {
-  margin-bottom: 1em;
 }
 
 .about-description,
@@ -243,14 +246,7 @@ p {
 }
 
 #contact {
-  padding: 3em 0;
-  color: #ffffff;
-  background: linear-gradient(rgba(0, 98, 185, 0.8)), url('../assets/imgs/common-bg.svg');
-  background-position: center;
-}
-
-#contact p {
-  color: #ffffff;
+  padding-bottom: 10em;
 }
 
 #contact h2 {
@@ -289,8 +285,12 @@ footer {
 }
 
 footer h2 {
-  margin-left: 1rem;
   text-transform: uppercase;
+}
+
+footer h2,
+.social-icons-container {
+  margin-left: 1rem;
 }
 
 footer h2,
@@ -303,7 +303,6 @@ footer p {
 }
 
 .social-icons-container {
-  margin-left: 1rem;
   margin-bottom: 3em;
 }
 
