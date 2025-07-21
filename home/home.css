@@ -66,12 +66,17 @@ p {
   gap: 1em;
 }
 
-.name {
-  margin: 0;
+.name,
+#header-link-list {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+
+.name {
+  margin: 0;
 }
 
 #hamburger-menu-icon,
@@ -106,6 +111,10 @@ p {
   color: #333333;
   text-transform: uppercase;
   border-top: 1px solid #eeeeee;
+}
+
+.header-menu-link-list {
+  display: none;
 }
 
 #hero {
@@ -317,4 +326,57 @@ footer p {
 
 #copyright {
   font-size: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  #header-menu-btn {
+    display: none;
+  }
+
+  .header-menu-link-list {
+    display: block;
+  }
+
+  #header-link-list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 1em;
+  }
+
+  .hero-header {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+  }
+
+  .hero-link {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .about-background {
+    width: 75%;
+  }
+
+  .about-link {
+    width: 30%;
+  }
+
+  .skills-container {
+    width: 75%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .social-icons-container {
+    margin: 0 1em;
+  }
 }
