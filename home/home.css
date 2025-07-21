@@ -127,6 +127,7 @@ p {
 }
 
 .hero-header {
+  /* margin: ; */
   font-size: 1.75rem;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -279,4 +280,42 @@ p {
 #contact a:active {
   color: #ffffff;
   text-decoration: underline;
+}
+
+footer {
+  padding: 3em 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer h2 {
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+footer h2,
+.footer-name {
+  font-size: 1rem;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+.social-icons-container {
+  margin-left: 1rem;
+  margin-bottom: 3em;
+}
+
+.social-icon {
+  width: 10%;
+}
+
+.footer-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#copyright {
+  font-size: 0.75rem;
 }
