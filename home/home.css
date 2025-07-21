@@ -16,7 +16,7 @@ a {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 20vh;
+  /* scroll-padding-top: 20vh; */
 }
 
 body {
@@ -34,6 +34,20 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  text-align: center;
+}
+
+p {
+  color: #777777;
+  line-height: 1.5;
+}
+
+h3,
+p {
+  margin: 0 1rem;
 }
 
 .img-container {
@@ -96,8 +110,8 @@ header {
 }
 
 #hero {
-  position: relative;
-  height: 100vh;
+  margin: 0;
+  height: 90vh;
   color: #ffffff;
   background: linear-gradient(rgba(0, 98, 185, 0.8)), url('../assets/imgs/common-bg.svg');
   background-position: center;
@@ -107,7 +121,6 @@ header {
   margin: 0 1em;
   position: absolute;
   top: 25%;
-  text-align: center;
 }
 
 .hero-header {
@@ -118,7 +131,7 @@ header {
 }
 
 .hero-info {
-  line-height: 1.5;
+  color: #ffffff;
 }
 
 .hero-link {
@@ -132,12 +145,7 @@ header {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-#projects {
-  margin: 0 1em 5em;
-  text-align: center;
-}
-
-.projects-heading {
+.underlined-heading {
   position: relative;
   margin-top: 2em;
   font-size: 2rem;
@@ -146,7 +154,7 @@ header {
   text-transform: uppercase;
 }
 
-.projects-heading::after {
+.underlined-heading::after {
   content: '';
   position: absolute;
   top: 1.5em;
@@ -158,18 +166,23 @@ header {
   border-radius: 5px;
 }
 
-.projects-description {
-  color: #777777;
-  line-height: 1.5;
+#projects {
+  padding: 3em 0;
+}
+
+#projects h3 {
+  margin-bottom: 1em;
 }
 
 .projects-img {
+  padding: 0 1em 5em;
   margin-top: 5em;
   width: 100%;
   object-fit: cover;
 }
 
-.projects-link {
+.projects-link,
+.about-link {
   display: inline-block;
   margin: 2em;
   padding: 1em 3em;
@@ -178,10 +191,53 @@ header {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.projects-link a {
+.projects-link a,
+.about-link a {
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+#about {
+  padding: 3em 0;
+  background-color: #fafafa;
+}
+
+#about h3 {
+  margin-bottom: 1em;
+}
+
+.about-description,
+.about-background {
+  margin-bottom: 3em;
+}
+
+.about-header,
+.about-background {
+  text-align: left;
+}
+
+.about-link {
+  display: block;
+  margin-left: 1em;
+  margin-bottom: 5em;
+  width: 50%;
+}
+
+.skills-container {
+  margin-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin: 0 1em 1em 0;
+  padding: 1em 2em;
+  color: #777777;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
 }
